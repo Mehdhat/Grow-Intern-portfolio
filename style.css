@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  --skin: #ffa600dc;
+  --dark: #01546b;
+  --light: #88aab7;
+  --white: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Proza Libre", sans-serif;
+}
+@keyframes fadeInTextHome {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn-home {
+  animation-name: fadeInTextHome;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInTextAbout {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn-about {
+  animation-name: fadeInTextAbout;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.container-animation {
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+nav {
+  background-color: var(--dark);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  color: var(--light);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+nav a:hover {
+  color: var(--light);
+  font-weight: 500;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: var(--dark);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(151, 89, 89, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--secondary);
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar a:hover {
+  color: var(--light);
+  font-weight: 500;
+}
+
+#home {
+  width: 100%;
+  color: var(--white);
+  text-align: center; 
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: max-content;
+  background-image: url(./alone-girl-qw9jqd5s60zbq77v.jpg);
+  margin-top: -17px;
+  background-size: cover; /* Make sure background image covers the entire section */
+}
+
+#home h1 {
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  color: var(--white);
+}
+
+#home h2 {
+  display: block;
+  font-weight: 400;
+  font-size: 27px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+#home h1 span{
+  color: var(--skin);
+  font-size: 50px;
+}
+#home button{
+  color: black;
+  background-color: var(--skin);
+  padding: 7px 18px;
+  border: none;
+  outline: none;
+}
+#home button:hover{
+  color: var(--white);
+  background-color: transparent;
+  padding: 7px 18px;
+  outline: none;
+  border: 2px solid var(--white);
+}
+#about img{
+  width: 100%;
+  padding: 20px;
+}
+#about .text-sec{
+  padding: 10px 10px;
+}
+#about h2, #skills h2{
+  color: var(--dark);
+  text-align: center;
+}
+#about p{
+  color: black;
+  text-align: justify;
+}
+
+#projects ,#skills{
+  padding: 20px;
+}
+#projects .row ,#skills .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#projects  h2, #skills h2{
+  color: #01546b;
+}
+.project ,.skill{
+  padding: 25px;
+  border: 3px solid var(--dark);
+  margin: 5px;
+  border-radius: 15px;
+  background-color: var(--white);
+}
+#projects a ,#skills a{
+  color: var(--dark);
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 7px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+}
+.project, .skill {
+  animation: slideIn 2.5s ease-in-out;
+  animation-delay: 6s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  border-bottom: 2px solid var(--skin);
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+}
+/* Responsive Styles */
+@media (min-width: 576px) {
+  /* Adjust column layout for small devices */
+  .row-cols-md-2 {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjust column layout for medium devices */
+  .row-cols-md-2 {
+    column-count: 2;
+  }
+}
+#projects a ,#skills a{
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color:var(--dark);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: capitalize;
+  --webkit-transtion: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+#projects a:hover ,#skills a:hover{
+  color: var(--dark);
+  background-color: var(--white);
+  border: 2px solid var(--dark);
+}
+#projects, #skills{
+  background-color: var(--white);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.project ,.skill {
+  margin: 0 auto 30px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#project .projects h3, #project p, #skills .skill h3, #skills p {
+  color: var(--black)!important;
+}
+#resume section {
+  background-color: var(--dark)!important;
+  color: var(--white);
+  padding: 30px 0;
+}
+#resume{
+  background-color: var(--dark);
+}
+#resume h2.resume-head{
+  color: var(--white);
+  text-align: center;
+  margin-top:30px ;
+  padding-top: 30px;
+}
+#resume h2, #resume h3 {
+  color: var(--skin);
+  margin-bottom: 10px;
+}
+
+#resume p, #resume li {
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+#resume ul {
+  list-style-position: inside;
+  list-style: square;
+  padding-left: 0;
+}
+
+#resume .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+#resume a {
+  color: var(--skin);
+  text-decoration: none;
+}
+
+#resume a:hover {
+  text-decoration: underline;
+}
+
+/* Additional responsive adjustments if necessary */
+@media (max-width: 600px) {
+  #resume .container {
+      padding: 10px;
+  }
+}
+
+
+.contacts h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: var(--dark);
+}
+
+.contacts .form-group {
+  margin-bottom: 20px;
+}
+
+.contacts label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contacts input[type="text"],
+.contacts input[type="email"],
+.contacts textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light);
+  border-radius: 5px;
+}
+input.form-control:hover,
+input.form-control:active,
+textarea.form-control:hover,
+textarea.form-control:active
+ {
+    border-color: var(--dark);
+    box-shadow: 0 0 0 0.15rem var(--light);
+}
+.contacts button {
+  display: block;
+  width: max-content;
+  padding: 10px 20px;
+  background-color: var(--dark);
+  color: var(--white);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contacts button:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+
+#status-message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.contact-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: var(--white);
+}
+.contact i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.contact-link{
+  text-decoration: none;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 24px;
+}
+.contact-link:hover{
+  color: var(--light);
+}
+
+footer{
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 10px;
+}
+
+
+@media (min-width: 992px) {
+  /* Adjust column layout for large devices */
+  .row-cols-lg-3 {
+    column-count: 3;
+  }
+}
+/* Add this CSS to make the navbar fixed on large devices */
+@media (min-width: 866px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+}
+a, a:hover{
+  text-decoration: none;
+  color: white;
+}

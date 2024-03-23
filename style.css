@@ -84,7 +84,7 @@ nav li {
 
 nav a {
   height: 100%;
-  padding: 0 30px;
+  padding: 10px 30px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -101,10 +101,10 @@ nav li:first-child {
 }
 
 .sidebar {
-  position: fixed;
+  position: static;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 50vh;
   width: 250px;
   z-index: 999;
   background-color: var(--dark);
@@ -485,4 +485,18 @@ footer{
 a, a:hover{
   text-decoration: none;
   color: white;
+}
+/* Assuming "Portfolio." has a class of .portfolio-link */
+.portfolio-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .portfolio-link a {
+    display: block;
+    width: 100%;
+    color: var(--light); /* Use a variable or specific color to make it stand out */
+  }
 }

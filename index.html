@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- navbar starts -->
   <nav>
     <ul class="sidebar container-animation">
       <li class="hide" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
@@ -30,7 +31,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
     <ul>
-      <li><a href="#">Portfolio .</a></li>
+      <li class="hideOnMobile"><a href="#">Portfolio .</a></li>
       <li class="hideOnMobile"><a href="#home">Home</a></li>
       <li class="hideOnMobile"><a href="#about">About</a></li>
       <li class="hideOnMobile"><a href="#skills">Skills</a></li>
@@ -45,11 +46,17 @@
           </svg></a></li>
     </ul>
   </nav>
+  <!-- navbar end -->
+
+  <!-- home starts -->
   <section id="home" class="fadeIn-home">
     <h1>Myself <span>,</span> Mehdhat Hafeez <span>.</span></h1>
     <h2>ui/ux designer & web developer</h2>
     <button><a href="#resume">Resume</a></button>
   </section>
+  <!-- home end -->
+
+  <!-- about starts -->
   <section id="about" class="fadeIn-about">
     <div class="about-section wrapper">
       <div class="container">
@@ -73,6 +80,9 @@
       </div>
     </div>
   </section>
+  <!-- about end -->
+
+  <!-- skills start -->
   <section id="skills">
     <div class="row">
       <h2 style="color: var(--dark); text-align: center;">Skills</h2>
@@ -82,7 +92,7 @@
           <h3 style="color: black;">HTML</h3>
           <p>As a beginner, I have a foundational understanding of HTML, allowing me to create the basic structure of
             web pages. I can define elements, headings, paragraphs, and links to build the content of a website.</p>
-               <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
+          <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -92,7 +102,7 @@
           <p>I possess beginner-level skills in CSS, enabling me to style HTML elements and enhance the visual
             presentation of web pages. I can apply basic styling properties such as colors, fonts, and layout to create
             visually appealing and responsive designs.</p>
-               <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
+          <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -102,7 +112,7 @@
           <p>As a novice in JavaScript, I can implement simple interactivity on web pages. I have a basic understanding
             of variables, functions, and event handling, allowing me to manipulate the content dynamically and respond
             to user actions.</p>
-               <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
+          <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -110,12 +120,14 @@
           <h3 style="color: black;">Bootstrap</h3>
           <p>I can utilize its pre-built components and grid system to enhance the design and responsiveness of
             websites, making it easier for me to create a visually pleasing and consistent layout. .</p>
-               <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
+          <a href="https://github.com/Mehdhat?tab=repositories" class="main-btn btn">Check Out</a>
         </div>
       </div>
     </div>
   </section>
-  <br>
+  <!-- skills end -->
+
+  <!-- projects starts -->
   <section id="projects">
     <div class="row">
       <h2 style="color: var(--dark); text-align: center;">Latest App Projects</h2>
@@ -182,47 +194,54 @@
       </div>
     </div>
   </section>
+  <!-- projects end -->
+
+  <!-- resume starts -->
   <section id="resume">
     <h2 class="resume-head">Resume</h2>
     <div class="container section">
-        <h2>Mehdhat Hafeez</h2>
-        <p>mehdhathafeez@gmail.com</p>
-        <p>G-22/4 Clayton Quarter’s Jahangir Road Karachi</p>
-        <h3>Objectives:</h3>
-        <ul>
-          <li>Seeking a dynamic IT role to leverage my technical and analytical skills in tackling challenges and driving innovation. Committed to continuous learning and contributing to organizational growth</li>
-        </ul>
-        <h3>Education:</h3>
-        <ul>
-          <li>Bachelor of Science in Computer Science (BSCS), FUUAST, Karachi, Pakistan (2021 - present) CGPA in 1st year of graduation 3.58/4.0.</li>
-          <li>Intermediate in Computer Science, Shahrah E Liaquat, Karachi, Pakistan (2017 - 2019) Percentage: 85%.</li>
-          <li>Matriculation in Science, The Quill School, Karachi, Pakistan (2016-2017) Percentage: 78.5%</li>
-        </ul>
-        <h3>Skills:</h3>
-        <ul>
-          <li>Web development: HTML, CSS, and JavaScript (in processing).</li>
-          <li>Proficient in C, C#, Java, and DDL (SQL Developer) for Query Language.</li>
-        </ul>
-        <h3>Projects:</h3>
-        <ul>
-            <li>Developed clone website of Careem, Fiverr, Coca Cola using HTML5, CSS3.</li>
-            <li>Designed and developed calculator, Todo List App, Pomodoro Timer, Voting app.</li>
-        </ul>
-        <h3>Hobbies:</h3>
-        <ul>
-          <li>Coding.</li>
-          <li>Gaming.</li>
-          <li>Web Development.</li>
-          <li>Data Analysis.</li>
-        </ul>
-        <h3>Languages:</h3>
-        <ul>
-          <li>English.</li>
-          <li>Urdu.</li>
-        </ul>
+      <h2>Mehdhat Hafeez</h2>
+      <p>mehdhathafeez@gmail.com</p>
+      <p>G-22/4 Clayton Quarter’s Jahangir Road Karachi</p>
+      <h3>Objectives:</h3>
+      <ul>
+        <li>Seeking a dynamic IT role to leverage my technical and analytical skills in tackling challenges and driving
+          innovation. Committed to continuous learning and contributing to organizational growth</li>
+      </ul>
+      <h3>Education:</h3>
+      <ul>
+        <li>Bachelor of Science in Computer Science (BSCS), FUUAST, Karachi, Pakistan (2021 - present) CGPA in 1st year
+          of graduation 3.58/4.0.</li>
+        <li>Intermediate in Computer Science, Shahrah E Liaquat, Karachi, Pakistan (2017 - 2019) Percentage: 85%.</li>
+        <li>Matriculation in Science, The Quill School, Karachi, Pakistan (2016-2017) Percentage: 78.5%</li>
+      </ul>
+      <h3>Skills:</h3>
+      <ul>
+        <li>Web development: HTML, CSS, and JavaScript (in processing).</li>
+        <li>Proficient in C, C#, Java, and DDL (SQL Developer) for Query Language.</li>
+      </ul>
+      <h3>Projects:</h3>
+      <ul>
+        <li>Developed clone website of Careem, Fiverr, Coca Cola using HTML5, CSS3.</li>
+        <li>Designed and developed calculator, Todo List App, Pomodoro Timer, Voting app.</li>
+      </ul>
+      <h3>Hobbies:</h3>
+      <ul>
+        <li>Coding.</li>
+        <li>Gaming.</li>
+        <li>Web Development.</li>
+        <li>Data Analysis.</li>
+      </ul>
+      <h3>Languages:</h3>
+      <ul>
+        <li>English.</li>
+        <li>Urdu.</li>
+      </ul>
     </div>
-</section>
+  </section>
+  <!-- resume end -->
 
+  <!-- contact starts -->
   <section id="contact">
     <div class="container contacts">
       <h2 style="color: var(--dark);">Contact Me</h2>
@@ -258,21 +277,41 @@
       </a>
     </div>
   </section>
+  <!-- contact end -->
 
+  <!-- footer starts -->
   <footer>
     <p>&copy; 2024 Mehdhat. All rights reserved. | Designed and developed by Mehdhat Hafeez</p>
   </footer>
-  <script src="./app.js"></script>
-  <script>
-    function showSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'flex';
-    }
+  <!-- footer end -->
 
-    function hideSidebar() {
-      const sidebar = document.querySelector('.sidebar');
-      sidebar.style.display = 'none';
-    }
+  <script>
+
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+  // Hide the menu button when the sidebar is shown
+  const menuButton = document.querySelector('.menu-button');
+  menuButton.style.display = 'none';
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+  // Show the menu button when the sidebar is hidden
+  const menuButton = document.querySelector('.menu-button');
+  menuButton.style.display = 'block';
+}
+
+    // function showSidebar() {
+    //   const sidebar = document.querySelector('.sidebar');
+    //   sidebar.style.display = 'flex';
+    // }
+
+    // function hideSidebar() {
+    //   const sidebar = document.querySelector('.sidebar');
+    //   sidebar.style.display = 'none';
+    // }
   </script>
 </body>
 
